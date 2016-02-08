@@ -43,7 +43,7 @@ struct LimitedQueue<Element>
         return last
     }
     
-    func filter(closure: (Element) -> Bool) -> [Element] {
+    func filter(@noescape closure: (Element) -> Bool) -> [Element] {
         return array.filter(closure)
     }
     
