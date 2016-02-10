@@ -10,31 +10,33 @@ import Foundation
 
 // ----------------------------------------------------------------------------
 
-struct LimitedQueue<Element>
+public struct LimitedQueue<Element>
 {
 // MARK: - Construction
     
-    init(size s: Int) {
+    public init(size s: Int) {
         self.size = s
         array.reserveCapacity(s)
     }
 
 // MARK: - Properties
     
-    var count: Int {
+    public let size: Int
+    
+    public var count: Int {
         return array.count
     }
     
 // MARK: - Functions
     
-    mutating func push(element: Element) {
+    public mutating func push(element: Element) {
         if array.count == size {
             array.removeLast()
         }
         array.insert(element, atIndex: 0)
     }
     
-    mutating func pushWithPop(element: Element) -> Element? {
+    public mutating func pushWithPop(element: Element) -> Element? {
         var last: Element?
         if array.count == size {
             last = array.popLast()
@@ -43,13 +45,13 @@ struct LimitedQueue<Element>
         return last
     }
     
-    func filter(@noescape closure: (Element) -> Bool) -> [Element] {
+    public func filter(@noescape closure: (Element) -> Bool) -> [Element] {
         return array.filter(closure)
     }
     
     //Unsafe intentionally, behavior is
     //same with Array behavior
-    subscript(index: Int) -> Element {
+    public subscript(index: Int) -> Element {
         get {
             return array[index]
         }
@@ -60,8 +62,6 @@ struct LimitedQueue<Element>
     
 // MARK: - Private properties
     
-    private let size: Int
-    
     private var array = [Element]()
 }
 
@@ -69,7 +69,7 @@ struct LimitedQueue<Element>
 
 extension Array
 {
-    init(_ limitedQueue: LimitedQueue<Element>) {
+    public init(_ limitedQueue: LimitedQueue<Element>) {
         self.init(limitedQueue.array)
     }
 }
