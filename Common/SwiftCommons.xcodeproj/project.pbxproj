@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		295005801C6C9EBB008EB6AF /* AutoLayoutTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950057F1C6C9EBB008EB6AF /* AutoLayoutTableView.swift */; };
+		295005871C6DF0F2008EB6AF /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295005861C6DF0F2008EB6AF /* Dictionary.swift */; };
 		29A9221C1C6B1BB1006019E3 /* SwiftCommons.h in Headers */ = {isa = PBXBuildFile; fileRef = 29A9221B1C6B1BB1006019E3 /* SwiftCommons.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29A922231C6B1BB1006019E3 /* SwiftCommons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A922181C6B1BB1006019E3 /* SwiftCommons.framework */; };
 		29A922281C6B1BB1006019E3 /* SwiftCommonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A922271C6B1BB1006019E3 /* SwiftCommonsTests.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		2950057F1C6C9EBB008EB6AF /* AutoLayoutTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutTableView.swift; sourceTree = "<group>"; };
+		295005861C6DF0F2008EB6AF /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		29A922181C6B1BB1006019E3 /* SwiftCommons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCommons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A9221B1C6B1BB1006019E3 /* SwiftCommons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftCommons.h; sourceTree = "<group>"; };
 		29A9221D1C6B1BB1006019E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				2950057F1C6C9EBB008EB6AF /* AutoLayoutTableView.swift */,
 				29A922341C6B1D24006019E3 /* CollectionType.swift */,
+				295005861C6DF0F2008EB6AF /* Dictionary.swift */,
 				29A922321C6B1CF4006019E3 /* LimitedQueue.swift */,
 				29A9221B1C6B1BB1006019E3 /* SwiftCommons.h */,
 				29A9221D1C6B1BB1006019E3 /* Info.plist */,
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29A922331C6B1CF4006019E3 /* LimitedQueue.swift in Sources */,
+				295005871C6DF0F2008EB6AF /* Dictionary.swift in Sources */,
 				295005801C6C9EBB008EB6AF /* AutoLayoutTableView.swift in Sources */,
 				29A922351C6B1D24006019E3 /* CollectionType.swift in Sources */,
 			);
