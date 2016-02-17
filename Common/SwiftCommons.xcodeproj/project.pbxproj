@@ -10,6 +10,10 @@
 		295005801C6C9EBB008EB6AF /* AutoLayoutTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950057F1C6C9EBB008EB6AF /* AutoLayoutTableView.swift */; };
 		295005871C6DF0F2008EB6AF /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295005861C6DF0F2008EB6AF /* Dictionary.swift */; };
 		295005931C72190D008EB6AF /* Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295005921C72190D008EB6AF /* Comparable.swift */; };
+		295005BF1C745306008EB6AF /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295005BE1C745306008EB6AF /* ArrayDataSource.swift */; };
+		295005C11C7458A3008EB6AF /* ArrayDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295005C01C7458A3008EB6AF /* ArrayDataSourceTests.swift */; };
+		295005C41C745EA5008EB6AF /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295005C21C745EA5008EB6AF /* CustomTableViewCell.swift */; };
+		295005C51C745EA5008EB6AF /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 295005C31C745EA5008EB6AF /* CustomTableViewCell.xib */; };
 		29A9221C1C6B1BB1006019E3 /* SwiftCommons.h in Headers */ = {isa = PBXBuildFile; fileRef = 29A9221B1C6B1BB1006019E3 /* SwiftCommons.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29A922231C6B1BB1006019E3 /* SwiftCommons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A922181C6B1BB1006019E3 /* SwiftCommons.framework */; };
 		29A922281C6B1BB1006019E3 /* SwiftCommonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A922271C6B1BB1006019E3 /* SwiftCommonsTests.swift */; };
@@ -32,6 +36,10 @@
 		2950057F1C6C9EBB008EB6AF /* AutoLayoutTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutTableView.swift; sourceTree = "<group>"; };
 		295005861C6DF0F2008EB6AF /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		295005921C72190D008EB6AF /* Comparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comparable.swift; sourceTree = "<group>"; };
+		295005BE1C745306008EB6AF /* ArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
+		295005C01C7458A3008EB6AF /* ArrayDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSourceTests.swift; sourceTree = "<group>"; };
+		295005C21C745EA5008EB6AF /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		295005C31C745EA5008EB6AF /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		29A922181C6B1BB1006019E3 /* SwiftCommons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCommons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A9221B1C6B1BB1006019E3 /* SwiftCommons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftCommons.h; sourceTree = "<group>"; };
 		29A9221D1C6B1BB1006019E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,6 +91,7 @@
 		29A9221A1C6B1BB1006019E3 /* SwiftCommons */ = {
 			isa = PBXGroup;
 			children = (
+				295005BE1C745306008EB6AF /* ArrayDataSource.swift */,
 				2950057F1C6C9EBB008EB6AF /* AutoLayoutTableView.swift */,
 				29A922341C6B1D24006019E3 /* CollectionType.swift */,
 				295005921C72190D008EB6AF /* Comparable.swift */,
@@ -100,6 +109,9 @@
 				29A922271C6B1BB1006019E3 /* SwiftCommonsTests.swift */,
 				29A922291C6B1BB1006019E3 /* Info.plist */,
 				29A922361C6B1D7D006019E3 /* LimitedQeueuTests.swift */,
+				295005C01C7458A3008EB6AF /* ArrayDataSourceTests.swift */,
+				295005C21C745EA5008EB6AF /* CustomTableViewCell.swift */,
+				295005C31C745EA5008EB6AF /* CustomTableViewCell.xib */,
 			);
 			path = SwiftCommonsTests;
 			sourceTree = "<group>";
@@ -202,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				295005C51C745EA5008EB6AF /* CustomTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +229,7 @@
 				295005871C6DF0F2008EB6AF /* Dictionary.swift in Sources */,
 				295005801C6C9EBB008EB6AF /* AutoLayoutTableView.swift in Sources */,
 				295005931C72190D008EB6AF /* Comparable.swift in Sources */,
+				295005BF1C745306008EB6AF /* ArrayDataSource.swift in Sources */,
 				29A922351C6B1D24006019E3 /* CollectionType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +239,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				29A922371C6B1D7D006019E3 /* LimitedQeueuTests.swift in Sources */,
+				295005C11C7458A3008EB6AF /* ArrayDataSourceTests.swift in Sources */,
+				295005C41C745EA5008EB6AF /* CustomTableViewCell.swift in Sources */,
 				29A922281C6B1BB1006019E3 /* SwiftCommonsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
