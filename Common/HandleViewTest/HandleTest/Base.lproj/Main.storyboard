@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10089" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HandleTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XK9-RX-4Hi">
+                                <rect key="frame" x="20" y="28" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="3OH-ok-7lS"/>
+                                    <constraint firstAttribute="height" constant="128" id="GIT-no-EkZ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dx4-wI-tOU" customClass="HandleView" customModule="SwiftCommons">
+                                <rect key="frame" x="20" y="164" width="240" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8mK-5b-eKm"/>
+                                    <constraint firstAttribute="width" constant="240" id="i47-gh-fAn"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="constraint" destination="GIT-no-EkZ" id="oie-8P-dQR"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTu-aF-y9g" customClass="HandleView" customModule="SwiftCommons">
+                                <rect key="frame" x="268" y="28" width="60" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="249" constant="128" id="Fw0-7w-nuf"/>
+                                    <constraint firstAttribute="width" priority="249" constant="60" id="iMF-rS-Q3X"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="btn_geo_map_location_pressed"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="constraint" destination="3OH-ok-7lS" id="LlM-ks-W5y"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dx4-wI-tOU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="0Qh-3a-Igr"/>
+                            <constraint firstItem="XK9-RX-4Hi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="6Ol-ia-Tq6"/>
+                            <constraint firstItem="XK9-RX-4Hi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="BKf-U4-Bwj"/>
+                            <constraint firstItem="JTu-aF-y9g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Fxs-W0-bKP"/>
+                            <constraint firstItem="Dx4-wI-tOU" firstAttribute="top" secondItem="XK9-RX-4Hi" secondAttribute="bottom" constant="8" id="HVa-GO-GbI"/>
+                            <constraint firstItem="JTu-aF-y9g" firstAttribute="leading" secondItem="XK9-RX-4Hi" secondAttribute="trailing" constant="8" id="NlZ-8o-1u1"/>
+                            <constraint firstItem="JTu-aF-y9g" firstAttribute="centerY" secondItem="XK9-RX-4Hi" secondAttribute="centerY" id="p9N-a8-xCM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Fxs-W0-bKP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="429"/>
+        </scene>
+    </scenes>
+</document>
